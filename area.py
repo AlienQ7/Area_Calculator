@@ -1,5 +1,5 @@
 pi = 3.14
-print("\t\tArea Calculator")
+print("Area Calculator".center(100))
 
 def area():
     unit = input("\nChoose the unit (centimeter/meter)? : ").lower()
@@ -12,27 +12,27 @@ def area():
         user = int(input("\nChoose the shape : "))
 
         if user == 1:
-            print("\t\tTRAINGLE")
+            print("TRAINGLE".center(100))
             h = float(input("Height : "))
             base = float(input("Base : "))
             area = 0.5 * base * h
-            print(f"Area = {area} sq {unit}")
+            print(f"Area = {area} {unit} sq")
         elif user == 2:
-            print("\t\tCIRCLE")
+            print("CIRCLE".center(100))
             r = float(input("Radius of the Circle : "))
             areac = pi * r ** 2
-            print(f"Area = {areac} sq {unit}")
+            print(f"Area = {areac} {unit} sq")
         elif user == 3:
-            print("\t\tSQUARE")
+            print("SQUARE".center(100))
             s = float(input("Side of the Square : "))
             area = s ** 2
-            print(f"Area = {area} sq {unit}")
+            print(f"Area = {area} {unit} sq")
         elif user == 4:
-            print("\t\tRECTANGLE")
+            print("RECTANGLE".center(100))
             l = float(input("Length : "))
             b = float(input("Breadth : "))
             area = l * b
-            print(f"Area = {area} sq {unit}")
+            print(f"Area = {area} {unit} sq")
         else:
             print("Invalid Input")
     else:
@@ -40,7 +40,7 @@ def area():
 
 while True:
     area()
-    ask = input("Do you want to perform another calculation? (yes/no): ")
+    ask = input("\nDo you want to perform another calculation? (yes/no): ")
     if ask.lower() != 'yes':
         break
 
